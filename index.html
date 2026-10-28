@@ -67,7 +67,8 @@
 </script>
 
 <style>
-  body { font: 15px/1.5 system-ui, sans-serif; max-width: 860px; margin: 24px auto; padding: 0 16px; }
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 0; }
+  main { max-width: 860px; margin: 24px auto; padding: 0 16px; }
   #panel { border: 1px solid #ccc; border-radius: 8px; padding: 12px 16px; background: #fafafa; }
   #log { background: #111; color: #ddd; padding: 10px; border-radius: 6px; max-height: 320px; overflow: auto; font-size: 12px; white-space: pre-wrap; }
   button { margin-right: 6px; }
@@ -75,6 +76,7 @@
 </style>
 </head>
 <body>
+<main>
   <h1>Cookiebot banner test</h1>
   <p>Test page for the custom banner template. Click the banner buttons and watch the reload counter and the log: a banner that reloads the page before the consent is saved makes the counter grow and the cookie stay absent.</p>
 
@@ -91,6 +93,7 @@
     <pre id="log"></pre>
   </div>
 
+</main>
   <script>
   (function () {
     var t = window.cbTest, $ = function (id) { return document.getElementById(id); };
